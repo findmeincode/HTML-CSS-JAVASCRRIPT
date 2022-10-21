@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        td{
+            padding: 10px;
+        }
+        div{
+           margin: auto;
+           width: 50%;
+           
+        }
+        fieldset{
+            width: 50%;
+            background-color: cadetblue;
+            padding-right: 90px;
+            border-radius: 20px;
+        }
+        .center{
+            margin: auto;
+            width: 50%;
+        }
+      .sub{
+        background-color: rgb(104, 33, 33);
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px;
+      }
+      .reset{
+        background-color: rgb(104, 33, 33);
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px;
+      }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="center">
+        <fieldset>
+          
+            <legend>Form design</legend>
+            <div>
+            <table width="50%">
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname" placeholder="Enter your first name"></td>
+                </tr>
+                <tr>
+                    <td>Last name</td>
+                    <td><input type="text" name="lname" placeholder="Surname"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="emmail" required></td>
+                </tr>
+                <tr>
+                    <td>Phone-number</td>
+                    <td><input type="number" required></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" id="" cols="30" rows="10" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                      <input type="radio" name="Gender" value="Male">Male &nbsp;
+                      <input type="radio" name="Gender" value="Female" id="">Female &nbsp;
+                      <input type="radio" name="Gender" value="Others" id="">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>
+                        <input type="checkbox" name="Hobby" value="Gerdening">Gerdening &nbsp;
+                        <input type="checkbox" name="Hobby" value="Pop-music">Pop-music &nbsp;
+                        <input type="checkbox" name="Hobby" value="Coding">Coding
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of birth</td>
+                    <td><input type="date" name="date-of-birth"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select name="country">
+                            <option value="">Select your country</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="India">India</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="China">China</option>
+                            <option value="Thailand">Thailand</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Photo</td>
+                    <td><input type="file" name="photo"></td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td><input type="time" name="time"></td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td><input type="color" name="color"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="sub">Submit</button></td>
+                    <td><button type="reset" class="reset">Clear</button></td>
+                </tr>
+            </table>
+          </div>
+        </fieldset>
+    </div>
+    </form>
+</body>
+</html>
